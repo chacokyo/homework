@@ -4,92 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML/CSS 과제</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Noto Sans KR', sans-serif;
-        background-color: #f5f5f5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-
-      .profile-card {
-        background: white;
-        border-radius: 20px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
-        width: 300px;
-        text-align: center;
-      }
-
-      .profile-image {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-bottom: 1.5rem;
-        object-fit: cover;
-        border: 5px solid #f0f0f0;
-      }
-
-      .name {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 0.5rem;
-      }
-
-      .bio {
-        color: #666;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-      }
-
-      .homework-links {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .homework-links li {
-        width: 50%;
-      }
-
-      .homework-links a {
-        display: block;
-        text-align: center;
-        color: #555;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      .homework-links a:hover {
-        color: #007bff;
-      }
-    </style>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="./src/assets/favicon/favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    <div class="past-homework">
+      <details>
+        <summary>지난 과제 링크</summary>
+        <a href="./src/md/markdown.md">1주차 과제(마크다운)</a>
+        <a href="./src/md/week1-retrospect.md">1주차 회고</a>
+      </details>
+    </div>
     <div class="profile-card">
-      <!-- 절대 경로로 이미지 삽입하기 -->
-      <!-- Github에서 절대 경로는 권장되지 않습니다. -->
-      <!-- 이유 1 : 저장소의 이름을 homework에서 다른 이름으로 변경할 경우 모든 절대 경로를 수정해야 합니다. -->
-      <!-- Github 배포를 위해 절대 경로를 사용할 경우 로컬에서 확인이 불가합니다. (https://localhost:8090으로 접속했을 때 homework을 찾지 못함) -->
-      <!-- 이러한 이유로 과제를 작성할 경우 반드시 경로는 상대 경로를 사용해 주세요 -->
-      <!-- 상대 경로로 이미지 삽입하기 -->
       <img src="./src/assets/jisu.jpg" alt="이지수 프로필" class="profile-image" />
       <h1 class="name">이지수</h1>
       <p class="bio">멋쟁이 사자처럼 프론트엔드 부트캠프 14기 이지수 입니다.</p>
-      <p>과제 결과는 링크를 선택해주세요.</p>
+      <hr />
+      <p class="sub-bio">*과제 결과는 링크를 선택해주세요.</p>
       <ul class="homework-links">
-        <li><a href="./src/md/markdown.md">마크다운 문법</a></li>
-        <li><a href="./src/md/week1-retrospect.md">1주차 회고</a></li>
+        <li><a href="./src/avatars/avatars.html">2주차 과제(Avatars)</a></li>
+        <li><a href="./src/md/week2-retrospect.md">2주차 회고</a></li>
       </ul>
     </div>
   </body>
