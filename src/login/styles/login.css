@@ -1,1 +1,62 @@
-/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+:root {
+  /* 네이버 색상 테마 */
+  --white: #fff;
+  --black-default: #121212;
+  --gray: #dadada;
+
+  /* 글자크기 */
+  --text-13: 0.8125rem;
+  --text-14: 0.875rem;
+  --text-16: 1rem;
+
+  /* 줄 높이 */
+  --leading-base: 1.5;
+}
+
+/* .naver-logo {
+  width: 230px;
+  margin-inline: auto;
+} */
+
+/* 입력 서식 컴포넌트 */
+/* .form-input {
+  --input-border-color: var(--gray);
+  --input-bg-color: var(--white);
+
+  font-size: var(--text-14);
+  position: relative;
+  top: 10px;
+
+  input {
+    width: 100%;
+    padding: 1.75em 2.5em 0 0.75rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 2px;
+    background: var(--input-bg-color);
+    font-size: var(--text-16);
+
+    &:invalid:not(:placeholder-shown):not(:focus) {
+      ~ small {
+        opacity: 1;
+      }
+    }
+  }
+
+  .placeholder {
+    position: absolute;
+    left: 0;
+    padding: var(--text-16);
+    transition: all 250ms;
+    opacity: 0.75;
+  }
+
+  small {
+    position: absolute;
+    bottom: -1.2em;
+    left: 8px;
+    font-weight: 500;
+    color: rgb(224, 32, 32);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+} */

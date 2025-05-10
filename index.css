@@ -5,24 +5,10 @@ body {
   background-color: #f5f5f5;
   position: relative;
   min-height: 100vh;
-  background-image: url("./src/assets/rabbit.png");
+  background-image: url('./src/assets/rabbit.png');
   background-repeat: no-repeat;
   background-position: 25vh 67vh;
-  background-size: 100px
-
-}
-
-.past-homework {
-  padding: 3px;
-  position: absolute;
-  top: 76%;
-  left: 20%;
-  transform: translateY(-50%);
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  width: 160px;
-  font-family: 'Noto Sans KR', sans-serif;
+  background-size: 100px;
 }
 
 details {
@@ -32,13 +18,13 @@ details {
 
 hr {
   border-style: dotted;
-  border-color: #929292
+  border-color: #929292;
 }
 .profile-card {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: white;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -71,7 +57,7 @@ hr {
 }
 
 .sub-bio {
-  color:#666;
+  color: #666;
 }
 
 .homework-links {
@@ -91,7 +77,7 @@ hr {
   font-weight: bold;
   display: block;
   text-align: center;
-  color:#333;
+  color: #333;
   text-decoration: none;
   transition: color 0.3s ease;
 }

@@ -1,1 +1,67 @@
-<!-- HTML 마크업을 작성해 주세요 -->
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네이버 로그인 과제</title>
+    <link rel="shortcut icon" href="../../public/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="preload" as="font" href="../../public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="../../public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../common/index.css" />
+    <link rel="stylesheet" href="../login/styles/login.css" />
+  </head>
+  <body>
+    <a href="../../index.html">메인 페이지 이동</a>
+    <header>
+      <a href="../../index.html">
+        <img class="naver-logo" src="../assets/login/naver_logo.svg" alt="네이버 메인 페이지로 이동" role="link" />
+      </a>
+    </header>
+    <div class="login-container">
+      <form action="https://formspree.io/f/mkgrzawk" method="post">
+        <div class="form-input">
+          <label for="formtext-1" class="placeholder">아이디 또는 이메일</label>
+          <input type="text" name="userId" id="formtext-1" pattern=".*[@a-zA-Z].*" required autocapitalize="off" autofocus />
+          <small>아이디 또는 이메일을 입력해 주세요.</small>
+          <button class="fas fa-xmark" type="reset" aria-label="입력 초기화"></button>
+        </div>
+        <div class="form-input">
+          <label for="formtext-2" class="placeholder">비밀번호</label>
+          <input type="password" name="userPassword" id="formtext-2" pattern="[A-Za-z\d!@#$%^&*()_+]{1,10}" required minlength="10" />
+          <small>비밀번호는 10자리 이상 입력해 주세요.</small>
+          <button aria-label="비밀번호 표시" class="fas fa-eye" type="button"></button>
+          <button class="fas fa-xmark" type="reset" aria-label="입력 초기화"></button>
+        </div>
+        <button class="button-fill" type="submit">로그인</button>
+        <div class="form-loginstatus-icon">
+          <input type="checkbox" name="loginStatus" id="formcheckbox-1" />
+          <label for="formcheckbox-1">로그인 상태 유지</label>
+        </div>
+      </form>
+    </div>
+    <div class="ip-container">
+      <button type="button" popovertarget="ipContent" class="button-popover">IP보안</button>
+      <div popover id="ipContent">
+        <form action="https://formspree.io/f/mkgrzawk" method="post">
+          <div class="iplevel-wrapper">
+            <div>
+              <label>
+                <input type="radio" name="iplevel" value="iplevel-01" />
+                IP 보안 1단계
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="iplevel" value="iplevel-off" />
+                사용 안함(OFF)
+              </label>
+            </div>
+          </div>
+          <img src="../login/pages/ip-security.webp" alt="보완 관련 설명" />
+          <button class="button-fill" type="submit">확인</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
