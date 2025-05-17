@@ -68,7 +68,7 @@
   display: inline-block;
   inline-size: 100%;
   block-size: 100%;
-  background-image: url(./src/apple/products/ipad_pro.jpeg);
+  background-image: url(../products/ipad_air.webp);
   background-position: center bottom 60%;
   background-size: cover;
   background-repeat: no-repeat;
