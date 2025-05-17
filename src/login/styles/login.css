@@ -1,62 +1,38 @@
-:root {
-  /* 네이버 색상 테마 */
-  --white: #fff;
-  --black-default: #121212;
-  --gray: #dadada;
-
-  /* 글자크기 */
-  --text-13: 0.8125rem;
-  --text-14: 0.875rem;
-  --text-16: 1rem;
-
-  /* 줄 높이 */
-  --leading-base: 1.5;
+@property --point-color {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #22be61;
 }
 
-/* .naver-logo {
-  width: 230px;
-  margin-inline: auto;
-} */
+header {
+  margin-inline: 50%;
+}
 
-/* 입력 서식 컴포넌트 */
-/* .form-input {
-  --input-border-color: var(--gray);
-  --input-bg-color: var(--white);
+.login-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 10px red;
 
-  font-size: var(--text-14);
-  position: relative;
-  top: 10px;
-
-  input {
-    width: 100%;
-    padding: 1.75em 2.5em 0 0.75rem;
-    border: 1px solid var(--input-border-color);
-    border-radius: 2px;
-    background: var(--input-bg-color);
-    font-size: var(--text-16);
-
-    &:invalid:not(:placeholder-shown):not(:focus) {
-      ~ small {
-        opacity: 1;
-      }
-    }
+  .form-container {
+    display: contents;
   }
 
-  .placeholder {
+  .form-input {
+    display: flex;
+  }
+
+  label {
     position: absolute;
-    left: 0;
-    padding: var(--text-16);
-    transition: all 250ms;
-    opacity: 0.75;
   }
 
   small {
-    position: absolute;
-    bottom: -1.2em;
-    left: 8px;
-    font-weight: 500;
-    color: rgb(224, 32, 32);
-    opacity: 0;
-    transition: all 0.3s;
+    color: transparent;
+    flex-grow: 1;
   }
-} */
+
+  input {
+    flex-grow: 1;
+  }
+}

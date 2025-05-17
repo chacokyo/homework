@@ -1,3 +1,75 @@
-@import "./reset.css";
-@import "./theme.css";
-@import "./base.css";
+@import './reset.css';
+@import './theme.css';
+@import './base.css';
+
+.card-box {
+  /* box */
+  --size: 31.25rem;
+
+  block-size: var(--size);
+}
+
+.product {
+  /* font */
+  --color: var(--white);
+  --color-details: var(--gray);
+  --size-title: var(--large-text);
+  --size-subtitle: var(--base-text);
+  --size-details: var(--small-text);
+
+  color: var(--color);
+
+  .title {
+    font-size: var(--size-title);
+  }
+
+  .subtitle {
+    font-size: var(--size-subtitle);
+    line-height: var(--line-normal);
+  }
+
+  .details {
+    color: var(--color-details);
+    font-size: var(--size-details);
+  }
+}
+
+.link-btn {
+  /* font */
+  --size: var(--xx-small-text);
+
+  /* button */
+  --size-block: var(--x-small-spacing);
+  --size-inline: var(--small-spacing);
+
+  display: inline-block;
+  font-size: var(--size);
+  border-radius: calc(var(--size) * 2);
+  padding-block: var(--size-block);
+  padding-inline: var(--size-inline);
+
+  &.fill {
+    --color: var(--white);
+    --color-bg: var(--blue-400);
+
+    color: var(--color);
+    background: var(--color-bg);
+  }
+
+  &.outline {
+    --color: var(--blue-400);
+
+    color: var(--color);
+    box-shadow: 0 0 0 1px var(--color);
+  }
+}
+
+.link-img {
+  display: inline-block;
+  inline-size: 100%;
+  block-size: 100%;
+  background-image: url(/src/apple/products/ipad_pro.jpeg);
+  background-position: center bottom 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
